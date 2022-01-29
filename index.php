@@ -5,12 +5,34 @@ require('header.php');
 <body>
     <div class="div_pocetna">
 
-        <h1 class="text-center text-primary mt-4">SNEAKERS</h1>
+        <a href="index.php">
+            <h1 class="text-center text-primary mt-4 mb-5" id="sneakers-naslov">SNEAKERS</h1>
+        </a>
 
         <div class="pretrazivanje_sortiranje_div">
             <div class="pretrazi_div">
                 <input type="text" class="form-control" id="pretrazi_unos">
                 <button type="button" class="btn btn-primary" id="pretrazi_dugme">Pretrazi</button>
+            </div>
+
+            <div class="sortiranje_div">
+
+                <label for="sortiranje_select" id="lbl_sort">Sortiraj po: </label>
+                <select id="sortiranje_select" class="form-select">
+                    <option>Izaberi</option>
+                    <option value="cena">Cena</option>
+                    <option value="model">Model</option>
+                    <option value="velicina">Velicina</option>
+                    <option value="boja">Boja</option>
+                </select>
+
+                <label for="poredak_select" id="lbl_poredak">Poredak: </label>
+                <select id="poredak_select" class="form-select">
+                    <option>Izaberi</option>
+                    <option value="asc">Rastuce</option>
+                    <option value="desc">Opadajuce</option>
+                </select>
+                <button type="button" class="btn btn-primary" id="sortiraj_dugme">Sortiraj</button>
             </div>
         </div>
 

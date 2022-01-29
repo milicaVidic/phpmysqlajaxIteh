@@ -32,13 +32,54 @@ img {
 
 .pretrazivanje_sortiranje_div {
     display: flex;
+    justify-content: space-between;
 }
 
 .pretrazi_div {
-    margin-left: 50px;
+    margin-left: 285px;
     display: flex;
 }
 
 #pretrazi_unos {
     margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sortiranje_div {
+    display: flex;
+    padding-right: 320px;
+}
+
+#lbl_sort {
+    width: 120px;
+    font-size: 23px;
+    padding-top: 2px;
+}
+
+#sortiranje_select {
+    width: 150px;
+}
+
+#sortiraj_dugme {
+    margin-left: 5px;
+    width: 100px;
+}
+
+#poredak_select {
+    width: 150px;
+    margin-left: -5px;
+}
+
+#lbl_poredak {
+    width: 120px;
+    font-size: 23px;
+    padding-top: 2px;
+    padding-left: 15px;
+}
+
+#sneakers-naslov {
+    font-size: 50px;
 }
