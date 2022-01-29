@@ -4,7 +4,17 @@ require('header.php');
 
 <body>
     <div class="div_pocetna">
+
         <h1 class="text-center text-primary mt-4">SNEAKERS</h1>
+
+        <div class="pretrazivanje_sortiranje_div">
+            <div class="pretrazi_div">
+                <input type="text" class="form-control" id="pretrazi_unos">
+                <button type="button" class="btn btn-primary" id="pretrazi_dugme">Pretrazi</button>
+            </div>
+        </div>
+
+
         <div class="patike_div_wrapper">
 
             <?php
@@ -13,7 +23,7 @@ require('header.php');
             $query = "select * from patike join boja on patike.boja_id = boja.id join velicina on patike.velicina_id = velicina.id";
             $data = $konekcija->query($query);
 
-            while ($patika = mysqli_fetch_object($data)) {
+            while ($patika = $data->fetch_object()) {
             ?>
                 <div class="patika_div">
                     <h5 class="text-center"><?php echo $patika->model ?></h5>
@@ -27,6 +37,8 @@ require('header.php');
             ?>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js.js"></script>
 </body>
 
 </html>

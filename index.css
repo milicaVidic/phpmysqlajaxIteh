@@ -29,3 +29,16 @@ img {
     margin-left: 100px;
     margin-top: 25px;
 }
+
+.pretrazivanje_sortiranje_div {
+    display: flex;
+}
+
+.pretrazi_div {
+    margin-left: 50px;
+    display: flex;
+}
+
+#pretrazi_unos {
+    margin-right: 10px;
+}
