@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Patua One', cursive;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+
+.patike_div_wrapper {
+    width: 1500px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.patika_div {
+    margin-left: 100px;
+    margin-top: 25px;
+}
