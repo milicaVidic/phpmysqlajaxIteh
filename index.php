@@ -43,7 +43,7 @@ require('header.php');
             <?php
             include('konekcijaBaza.php');
 
-            $query = "select * from patike join boja on patike.boja_id = boja.id join velicina on patike.velicina_id = velicina.id";
+            $query = "select * from patike join boja on patike.boja_id = boja.b_id join velicina on patike.velicina_id = velicina.v_id";
             $data = $konekcija->query($query);
 
             while ($patika = $data->fetch_object()) {
@@ -54,6 +54,10 @@ require('header.php');
                     <h5 class="text-center">Velicina: <?php echo $patika->velicina ?></h5>
                     <h5 class="text-center">Boja: <?php echo $patika->boja ?></h5>
                     <h4 class="text-center"><?php echo $patika->cena ?> RSD</h4>
+                    <div class="izmena_obrisi_div">
+                        <a href="izmeni_model.php?model_id=<?php echo $patika->id; ?>"><button type="button" class="btn btn-success" id="izmeni_btn">Izmena</button></a>
+                        <button type="button" class="btn btn-danger">Obrisi</button>
+                    </div>
                 </div>
             <?php
             }

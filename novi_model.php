@@ -20,7 +20,7 @@ include('header.php');
 
                 while ($velicina = $data->fetch_object()) {
                 ?>
-                    <option value="<?php echo $velicina->id; ?>"><?php echo $velicina->velicina ?></option>
+                    <option value="<?php echo $velicina->v_id; ?>"><?php echo $velicina->velicina ?></option>
                 <?php } ?>
             </select>
         </div>
@@ -34,7 +34,7 @@ include('header.php');
 
                 while ($boja = $data2->fetch_object()) {
                 ?>
-                    <option value="<?php echo $boja->id; ?>"><?php echo $boja->boja ?></option>
+                    <option value="<?php echo $boja->b_id; ?>"><?php echo $boja->boja ?></option>
                 <?php } ?>
             </select>
         </div>

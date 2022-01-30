@@ -27,6 +27,8 @@ img {
 
 .patika_div {
     margin-left: 100px;
+    padding-top: 15px;
+    margin-bottom: 50px;
 }
 
 .pretrazivanje_sortiranje_div {
@@ -93,7 +95,8 @@ a {
     height: 45px;
 }
 
-#novi_model_form {
+#novi_model_form,
+#izmeni_model_form {
     width: 650px;
     margin-left: 20px;
     margin-top: 20px;
@@ -101,4 +104,8 @@ a {
 
 .form-group {
     margin-bottom: 15px;
+}
+
+.izmena_obrisi_div {
+    margin-left: 26px;
 }
