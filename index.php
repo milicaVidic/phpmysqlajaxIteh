@@ -6,8 +6,10 @@ require('header.php');
     <div class="div_pocetna">
 
         <a href="index.php">
-            <h1 class="text-center text-primary mt-4 mb-5" id="sneakers-naslov">SNEAKERS</h1>
+            <h1 class="text-center text-primary mt-4 mb-3" id="sneakers-naslov">SNEAKERS</h1>
         </a>
+
+        <a href="novi_model.php"><button class="btn btn-primary mb-4" id="novi_model_dugme">Novi model</button></a>
 
         <div class="pretrazivanje_sortiranje_div">
             <div class="pretrazi_div">
@@ -16,7 +18,6 @@ require('header.php');
             </div>
 
             <div class="sortiranje_div">
-
                 <label for="sortiranje_select" id="lbl_sort">Sortiraj po: </label>
                 <select id="sortiranje_select" class="form-select">
                     <option>Izaberi</option>

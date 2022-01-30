@@ -27,12 +27,12 @@ img {
 
 .patika_div {
     margin-left: 100px;
-    margin-top: 25px;
 }
 
 .pretrazivanje_sortiranje_div {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .pretrazi_div {
@@ -61,16 +61,19 @@ a {
 
 #sortiranje_select {
     width: 150px;
+    padding-left: 37px;
 }
 
 #sortiraj_dugme {
     margin-left: 5px;
+    margin-right: -7px;
     width: 100px;
 }
 
 #poredak_select {
     width: 150px;
-    margin-left: -5px;
+    margin-left: -7px;
+    padding-left: 37px;
 }
 
 #lbl_poredak {
@@ -82,4 +85,20 @@ a {
 
 #sneakers-naslov {
     font-size: 50px;
+}
+
+#novi_model_dugme {
+    margin-left: 855px;
+    width: 215px;
+    height: 45px;
+}
+
+#novi_model_form {
+    width: 650px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
 }
