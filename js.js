@@ -1,6 +1,7 @@
 $(document).ready(function () {
     pretraziPatike();
     sortirajPatike();
+    obrisiPatike();
 });
 
 function pretraziPatike() {
@@ -44,6 +45,29 @@ function sortirajPatike() {
                     {
                         $(".patike_div_wrapper").empty();
                         $(".patike_div_wrapper").html(data_response);
+                    }
+                }
+            }
+        )
+    })
+
+}
+
+function obrisiPatike() {
+
+    $(document).on('click', '#obrisi_dugme', function () {
+
+        var id_delete = $(this).attr('value');
+
+        $.ajax(
+            {
+                url: 'obrisi_model.php',
+                method: 'post',
+                data: { ID_DELETE: id_delete },
+
+                success: function (data_response) {
+                    {
+                        window.location.replace("index.php");
                     }
                 }
             }

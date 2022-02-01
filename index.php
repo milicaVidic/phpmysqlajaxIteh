@@ -56,7 +56,7 @@ require('header.php');
                     <h4 class="text-center"><?php echo $patika->cena ?> RSD</h4>
                     <div class="izmena_obrisi_div">
                         <a href="izmeni_model.php?model_id=<?php echo $patika->id; ?>"><button type="button" class="btn btn-success" id="izmeni_btn">Izmena</button></a>
-                        <button type="button" class="btn btn-danger">Obrisi</button>
+                        <button type="button" class="btn btn-danger" value="<?php echo $patika->id; ?>" id="obrisi_dugme">Obrisi</button>
                     </div>
                 </div>
             <?php
